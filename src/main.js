@@ -1,7 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { getImagesByQuery } from './js/pixaby-api.js';
+import { getImagesByQuery } from './js/pixabay-api.js';
 import { createGallery, clearGallery, showLoader, hideLoader } from './js/render-functions.js';
 
 // Инициализация внутренних данных
@@ -37,7 +37,7 @@ form.addEventListener('submit', (event) => {
     .catch(error => {
       hideLoader();
       showIziError('Щось пішло не так... Ми вже працюємо над цією проблемою.');
-      console.log(error);
+      //console.log(error);
     });
 });
 
